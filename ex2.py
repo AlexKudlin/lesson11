@@ -1,7 +1,7 @@
 pets = {}
 next_id = 1  # Начальный ID
 
-# Добавляем питомцев
+
 n = int(input("Сколько питомцев добавить? "))
 
 for _ in range(n):
@@ -24,10 +24,6 @@ while True:
     if selected_input.lower() == "q":
         break
 
-    # Проверка: цифра ли это?
-    if not selected_input.isdigit():
-        print("Введите только цифровое значение!")
-        continue
 
     selected_id = int(selected_input)
 
